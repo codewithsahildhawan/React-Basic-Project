@@ -1,5 +1,8 @@
 # DevTech Labs – React Basic Project
 
+## 🚀 Live Demo
+[https://devtechlabs-react.vercel.app/](https://devtechlabs-react.vercel.app/)
+
 A modern, modular React web application for an IT & Web Development company, built with Vite, React Router, and Bootstrap. This project demonstrates best practices in component structure, routing, and data management.
 
 ## Features
@@ -59,6 +62,12 @@ npm run build
 ```bash
 npm run preview
 ```
+
+## Known Issues & Best Practices
+- **JSX className**: Always use `className` instead of `class` in JSX. Some files (e.g., `ContactUs.jsx`) use `class` and should be updated for React compatibility.
+- **External Links**: Use `<a href="mailto:...">` for email links, not React Router's `<Link>`.
+- **Empty CSS Modules**: Some `.module.css` files are empty. Remove or fill as needed.
+- **Demo Form**: The contact form does not submit to a backend; it only shows toast notifications.
 
 ## Credits
 - [Vite](https://vitejs.dev/)
