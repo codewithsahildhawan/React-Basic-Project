@@ -1,10 +1,19 @@
 import { useParams } from 'react-router-dom';
 import content from '../data/site_content';
 import TopBanner from '../components/TopBanner/TopBanner';
+import { useMeta } from '../hooks/useMeta';
 
 const ServiceDetail = () => {
   const { slug } = useParams();
   const service = content.services.data.find(s => s.slug === slug);
+
+ useMeta({
+    title: `${service?.name} | Devtech Labs`,
+    description: service?.shortDesc,
+    keywords: `${service?.name}, Devtech Labs services, IT solutions, software development`,
+ })
+
+
 
   if (!service) return <p>Service not found.</p>;
 

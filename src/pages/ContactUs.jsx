@@ -4,8 +4,15 @@ import "react-toastify/dist/ReactToastify.css";
 import TopBanner from "../components/TopBanner/TopBanner";
 import content from "../data/site_content";
 import { Link } from "react-router-dom";
+import { useMeta } from "../hooks/useMeta";
 
 const ContactPage = () => {
+  useMeta({
+    title: "Contact Us | Devtech Labs - Let’s Build Something Great Together",
+    description: "Get in touch with Devtech Labs for custom software development, technology consulting, and digital innovation solutions. We'd love to hear about your project!",
+    keywords: "Devtech Labs contact, software consultation, tech support, project inquiry, software development contact, IT services, digital solutions, hire developers"
+  });
+
  const [form, setForm] = useState({
     name: "",
     email: "",

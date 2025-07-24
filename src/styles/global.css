@@ -1557,7 +1557,7 @@ strong {
     left: 20px;
     opacity: 1;
     pointer-events: auto;
-    max-width: 100px;
+    max-width: 70%;
     margin-top: 10px;
     margin-bottom: 15px;
   }

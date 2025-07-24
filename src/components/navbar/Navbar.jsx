@@ -7,9 +7,19 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg">
       <div className="container">
         <Link className="navbar-brand" to="/">
-        <img src="/images/logo.png" className="logo img-fluid" alt="Logo" />
-        </Link>
-
+        {/* Desktop Logo - visible on lg and above */}
+        <img
+          src="/images/logo-desktop.png"
+          className="logo img-fluid d-none d-lg-block"
+          alt="Desktop Logo"
+        />
+        {/* Mobile Logo - visible below lg */}
+        <img
+          src="/images/logo-mobile.png"
+          className="logo img-fluid d-block d-lg-none"
+          alt="Mobile Logo"
+        />
+      </Link>
         <button
           className="navbar-toggler"
           type="button"

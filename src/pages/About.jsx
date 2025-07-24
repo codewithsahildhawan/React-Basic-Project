@@ -1,9 +1,19 @@
 import React from 'react'
 import TopBanner from '../components/TopBanner/TopBanner'
 import aboutContent from "../data/about";
+import { useMeta } from '../hooks/useMeta';
 
 
 const About = () => {
+  useMeta({
+  title: "Innovating the Future, One Line of Code at a Time | Devtech Labs",
+    description:
+      "Devtech Labs empowers businesses to scale through innovative technology solutions in FinTech, EdTech, HealthTech, and E-commerce. We build scalable digital products using AI, cloud, and agile development.",
+    keywords:
+      "Devtech Labs, software development, digital transformation, technology innovation, FinTech, EdTech, HealthTech, AI, blockchain, IoT, cloud computing, custom software, mobile app development, agile development, MVP, scalable solutions",
+  });
+
+
   return (
     <>
     <TopBanner title="About"></TopBanner>
